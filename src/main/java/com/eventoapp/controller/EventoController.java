@@ -31,7 +31,7 @@ public class EventoController {
     public ModelAndView listaEventos(){
         ModelAndView mv = new ModelAndView("/index");
         Iterable<Evento> eventos = er.findAll();
-        mv.addObject("eventos", eventos);
+        mv.addObject("eventos",eventos);
 
         return  mv;
     }
